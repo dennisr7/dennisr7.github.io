@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OrthoVision · Dennis Ray Filho</title>
+<meta name="description" content="A browser-based 3D knee for surgeons and patients, controlled by hand gestures and voice. 1st Place Overall and the Arthrex Challenge at EagleHacks 2026.">
+<meta property="og:title" content="OrthoVision · Dennis Ray Filho">
+<meta property="og:description" content="A browser-based 3D knee for surgeons and patients, controlled by hand gestures and voice. 1st Place Overall and the Arthrex Challenge at EagleHacks 2026.">
+<meta property="og:image" content="https://dennisr7.github.io/assets/img/og.jpg">
+<meta name="theme-color" content="#f7f8f8">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav__bar">
+    <a class="nav__name" href="../index.html"><span class="mark" aria-hidden="true">DRF</span><span>Dennis Ray Filho</span></a>
+    <nav aria-label="Main">
+      <ul class="nav__links">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li class="opt"><a href="../assets/Dennis_Ray_Filho_Resume.pdf">Résumé</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--primary nav__cta" href="mailto:dennisrayfilho@gmail.com">Email me</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- 02 -->
+  <article class="case page-top" id="orthovision" aria-labelledby="c2-h">
+    <div class="wrap">
+      <header class="case__head grid">
+        <div class="span-6">
+          <span class="t-label">EagleHacks 2026 · 1st Place Overall and the Arthrex Challenge</span>
+          <h1 id="c2-h">Anatomy you can explore without touching anything.</h1>
+        </div>
+        <div class="span-5 start-8 stack">
+          <p class="lead">A browser-based 3D knee for surgeons and patients, controlled by hand gestures and voice. It won 1st Place Overall and the Arthrex Challenge, and became my capstone with Arthrex.</p>
+          <ul class="rows">
+            <li><span>Role</span><span>Hand tracking, scene controls, speech to text</span></li>
+            <li><span>Team</span><span>3 people, one weekend</span></li>
+            <li><span>Built in</span><span>TypeScript, React Three Fiber, Python, MediaPipe</span></li>
+            <li><span>Demo</span><span><a href="https://orthovision-seven.vercel.app">orthovision-seven.vercel.app</a></span></li>
+          </ul>
+        </div>
+      </header>
+
+      <figure class="hero-fig">
+        <img src="../assets/img/orthovision.webp" alt="OrthoVision in surgeon mode: a 3D knee with muscles and tendons, beside a panel of toggles for bones, ligaments, soft tissue and muscles" width="1600" height="1000">
+        <figcaption>OrthoVision in surgeon mode, from the live demo.</figcaption>
+      </figure>
+
+      <div class="body grid">
+        <h3 class="span-3">The constraint</h3>
+        <div class="span-7 start-5 txt">
+          <p>Arthrex asked teams to help surgeons treat their patients better. Our answer was an interactive knee with a step-by-step ACL reconstruction walkthrough, separate surgeon and patient modes, and an AI assistant. One constraint shaped my part: in a sterile field, a surgeon can't reach for a mouse or a touchscreen.</p>
+        </div>
+
+        <h3 class="span-3">Gestures that wait until they're meant</h3>
+        <div class="span-7 start-5 txt">
+          <p>Raw hand tracking jitters, and a model that drifts while your hand rests feels broken. My Python sidecar (MediaPipe, OpenCV) streams gestures to the browser over WebSockets at 30 FPS, through three filters.</p>
+          <ol class="pipe" aria-label="Gesture pipeline">
+            <li><b>Landmarks</b><span>30 FPS, noisy</span></li>
+            <li><b>Hysteresis</b><span>a gesture must hold before it switches</span></li>
+            <li><b>Dead zone</b><span>swallows small tremors</span></li>
+            <li><b>EMA smoothing</b><span>steadies continuous motion</span></li>
+            <li><b>Scene</b><span>orbit, zoom, select</span></li>
+          </ol>
+        </div>
+
+        <h3 class="span-3">Voice selects, hands navigate</h3>
+        <div class="span-7 start-5 txt">
+          <p>Pointing at one of hundreds of small structures in mid-air is slow and error-prone. Naming one is instant. Saying a structure's name selects it and flies the camera to it, while hands handle orbit and zoom. A GPT-4o-mini assistant returns structured JSON that drives the scene.</p>
+          <p>Touch-free input has no click to confirm it worked, so the 452-mesh model answers every selection with an animated highlight. If it lands on the wrong structure, you see it right away.</p>
+        </div>
+
+        <h3 class="span-3">What came next</h3>
+        <div class="span-7 start-5 txt">
+          <p>The win turned into my capstone with Arthrex: <a href="arthrex.html">a hand-tracking UI library for surgical VR</a>.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+  <nav class="next" aria-label="Next project">
+    <div class="wrap"><a href="nextera.html"><span class="t-label">Next project · NextEra Energy</span><b>Idle EV chargers were an information problem</b></a></div>
+  </nav>
+</main>
+
+<footer class="foot" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <h2 id="contact-h" class="foot__h">Let's talk.</h2>
+    <a class="foot__mail" href="mailto:dennisrayfilho@gmail.com">dennisrayfilho@gmail.com</a>
+    <div class="foot__row">
+      <p>Fort Myers, Florida · open to relocating</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/dennis-ray-filho-09258727b">LinkedIn</a></li>
+        <li><a href="https://github.com/dennisr7">GitHub</a></li>
+        <li><a href="https://devpost.com/dennisr7">Devpost</a></li>
+        <li><a href="../assets/Dennis_Ray_Filho_Resume.pdf">Résumé (PDF)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

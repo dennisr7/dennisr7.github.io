@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hand-tracking UI library for Arthrex · Dennis Ray Filho</title>
+<meta name="description" content="A hand-tracking UI library in Unreal Engine for surgical interactions in VR, built as a capstone with Arthrex and refined with NASA TLX.">
+<meta property="og:title" content="Hand-tracking UI library for Arthrex · Dennis Ray Filho">
+<meta property="og:description" content="A hand-tracking UI library in Unreal Engine for surgical interactions in VR, built as a capstone with Arthrex and refined with NASA TLX.">
+<meta property="og:image" content="https://dennisr7.github.io/assets/img/og.jpg">
+<meta name="theme-color" content="#f7f8f8">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav__bar">
+    <a class="nav__name" href="../index.html"><span class="mark" aria-hidden="true">DRF</span><span>Dennis Ray Filho</span></a>
+    <nav aria-label="Main">
+      <ul class="nav__links">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li class="opt"><a href="../assets/Dennis_Ray_Filho_Resume.pdf">Résumé</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--primary nav__cta" href="mailto:dennisrayfilho@gmail.com">Email me</a>
+  </div>
+</header>
+
+<main id="main">
+  <article class="case page-top" aria-labelledby="ar-h">
+    <div class="wrap">
+      <header class="case__head grid">
+        <div class="span-6">
+          <span class="t-label">Capstone with Arthrex · in progress</span>
+          <h1 id="ar-h">Hand tracking for surgical work in VR.</h1>
+        </div>
+        <div class="span-5 start-8 stack">
+          <p class="lead">Arthrex regularly uses VR in its core surgical operations, from training surgeons to designing operating rooms. My capstone with Arthrex is a hand-tracking UI library in Unreal Engine for those surgical interactions in VR.</p>
+          <ul class="rows">
+            <li><span>Role</span><span>Interaction design, user testing, Unreal Engine development</span></li>
+            <li><span>Partner</span><span>Arthrex</span></li>
+            <li><span>Built in</span><span>Unreal Engine</span></li>
+            <li><span>Measures</span><span>NASA TLX, task time, errors</span></li>
+          </ul>
+        </div>
+      </header>
+
+      <figure class="hero-fig">
+        <img src="../assets/img/arthrex_or.webp" alt="An operating room: surgeons at the table under surgical lights, an MRI scan on a wall display, an equipment tower and staff at workstations" width="1600" height="526">
+        <figcaption>An Arthrex operating room. Photo: Arthrex.</figcaption>
+      </figure>
+
+      <div class="body grid">
+        <h3 class="span-3">Why hands</h3>
+        <div class="span-7 start-5 txt">
+          <p>In surgery, a surgeon's hands hold instruments, not controllers. A VR session for training or for planning a room should ask for the same hands. The library gives Arthrex's VR projects one shared set of hand interactions, so each project doesn't rebuild them.</p>
+        </div>
+
+        <h3 class="span-3">How each version is tested</h3>
+        <div class="span-7 start-5 txt">
+          <p>The library grows one surgical task at a time, and every version is tested with people before the next one starts.</p>
+          <ol class="loop" aria-label="Test loop">
+            <li><b>Build</b><span>a gesture set for one surgical task</span></li>
+            <li><b>Measure</b><span>task time, errors and NASA TLX</span></li>
+            <li><b>Change</b><span>what the scores point to</span></li>
+            <li><b>Test again</b><span>with the next version</span></li>
+          </ol>
+        </div>
+
+        <h3 class="span-3">Why NASA TLX</h3>
+        <div class="span-7 start-5 txt">
+          <p>The NASA Task Load Index asks people to rate a task on six scales: mental demand, physical demand, time pressure, performance, effort and frustration. A gesture can be fast and still tiring to hold. Timing alone would miss that; the workload scores catch it.</p>
+        </div>
+
+        <h3 class="span-3">Where it started</h3>
+        <div class="span-7 start-5 txt">
+          <p>The capstone came out of <a href="orthovision.html">OrthoVision</a>, the touch-free knee explorer my team built at EagleHacks 2026. It won 1st Place Overall and the Arthrex Challenge.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+  <nav class="next" aria-label="Next project">
+    <div class="wrap"><a href="orthovision.html"><span class="t-label">Next project · EagleHacks 2026</span><b>OrthoVision, a knee you explore without touching anything</b></a></div>
+  </nav>
+</main>
+
+<footer class="foot" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <h2 id="contact-h" class="foot__h">Let's talk.</h2>
+    <a class="foot__mail" href="mailto:dennisrayfilho@gmail.com">dennisrayfilho@gmail.com</a>
+    <div class="foot__row">
+      <p>Fort Myers, Florida · open to relocating</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/dennis-ray-filho-09258727b">LinkedIn</a></li>
+        <li><a href="https://github.com/dennisr7">GitHub</a></li>
+        <li><a href="https://devpost.com/dennisr7">Devpost</a></li>
+        <li><a href="../assets/Dennis_Ray_Filho_Resume.pdf">Résumé (PDF)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

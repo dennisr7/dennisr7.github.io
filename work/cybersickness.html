@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VR motion-sickness wearable · Dennis Ray Filho</title>
+<meta name="description" content="A wearable that times bone-conducted vibration to the moments VR is most likely to make you sick. First-author IEEE ICIICE 2026 paper; patent filing by FGCU.">
+<meta property="og:title" content="VR motion-sickness wearable · Dennis Ray Filho">
+<meta property="og:description" content="A wearable that times bone-conducted vibration to the moments VR is most likely to make you sick. First-author IEEE ICIICE 2026 paper; patent filing by FGCU.">
+<meta property="og:image" content="https://dennisr7.github.io/assets/img/og.jpg">
+<meta name="theme-color" content="#f7f8f8">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav__bar">
+    <a class="nav__name" href="../index.html"><span class="mark" aria-hidden="true">DRF</span><span>Dennis Ray Filho</span></a>
+    <nav aria-label="Main">
+      <ul class="nav__links">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li class="opt"><a href="../assets/Dennis_Ray_Filho_Resume.pdf">Résumé</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--primary nav__cta" href="mailto:dennisrayfilho@gmail.com">Email me</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- the opening: the earhook turns as you scroll, then becomes its drawing -->
+  <section class="scrub" id="top" data-scrub data-seq="../assets/img/" aria-labelledby="hero-h">
+    <div class="scrub__stage">
+      <div class="wrap scrub__grid">
+        <div class="scrub__copy">
+          <div class="scrub__chap is-on" data-from="0" data-to=".2">
+            <h1 id="hero-h">I invented a wearable to reduce motion sickness in&nbsp;VR.</h1>
+            <p>I built it at Florida Gulf Coast University under HCI researcher Dr. Md Baharul Islam. The device turning here is its behind-the-ear form. Scroll and it becomes its drawing.</p>
+            <div class="btn-row"><a class="btn btn--primary" href="#case">Skip to the case study</a></div>
+          </div>
+          <div class="scrub__chap" data-from=".2" data-to=".4">
+            <span class="t-label">fig. 1 · on the headset</span>
+            <h2>It clips to the headset you already wear.</h2>
+            <p>The clip mounts on the VR headset's strap, and the headset's own weight presses a bone-conduction transducer onto the bone behind your ear. No headband, no per-user calibration.</p>
+          </div>
+          <div class="scrub__chap" data-from=".4" data-to=".58">
+            <span class="t-label">fig. 2 · timing</span>
+            <h2>Vibration timed to the inner ear.</h2>
+            <p>A short burst fires just after each peak of linear jerk, the moments when what your eyes see and what your inner ear feels disagree the most.</p>
+          </div>
+          <div class="scrub__chap" data-from=".58" data-to=".8" data-co="arm">
+            <span class="t-label">fig. 3 · drawn from the CAD</span>
+            <h2>One size, 44 grams.</h2>
+            <p>A flexible TPU arm curves over the ear and fits different ears. The drawing is computed from the same model as the render.</p>
+          </div>
+          <div class="scrub__chap" data-from=".8" data-to="1">
+            <span class="t-label">fig. 4 · status</span>
+            <h2>Patent pending. The study is next.</h2>
+            <p>I'm co-inventor, with Dr. Md Baharul Islam, on FGCU's provisional patent, and first author of the IEEE ICIICE 2026 paper. The human-subjects study is being prepared now.</p>
+            <div class="btn-row dup"><a class="btn btn--primary" href="#case">Read the case study</a></div>
+          </div>
+          <div class="scrub__meter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="scrub__view">
+          <img class="scrub__first" src="../assets/img/seq/r000.webp" alt="" width="1000" height="1000" fetchpriority="high">
+          <canvas role="img" aria-label="The earhook wearable in navy, turning slowly; as the page scrolls it becomes a line drawing with its over-ear arm marked"></canvas>
+          <svg viewBox="0 0 1000 1000" aria-hidden="true"></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 -->
+  <article class="case" id="case" aria-labelledby="c1-h">
+    <div class="wrap">
+      <header class="case__head grid">
+        <div class="span-6">
+          <span class="t-label">Invention · FGCU HCI research</span>
+          <h2 id="c1-h">A motion-sickness fix that rides on the headset.</h2>
+        </div>
+        <div class="span-5 start-8 stack">
+          <p class="lead">A wearable that times bone-conducted vibration to the moments VR is most likely to make you sick. I designed and built it end to end: the mount, the circuit board, the firmware, the host software and the test tools.</p>
+          <ul class="rows">
+            <li><span>Role</span><span>Co-inventor, first author, sole builder</span></li>
+            <li><span>With</span><span>Dr. Md Baharul Islam, FGCU</span></li>
+            <li><span>Built in</span><span>Python, C++ on ESP32-S3, Swift</span></li>
+            <li><span>Paper</span><span><a href="https://doi.org/10.1109/ICIICE69672.2026.11565340">IEEE ICIICE 2026, doi.org/10.1109/ICIICE69672.2026.11565340</a></span></li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="photos">
+        <figure class="photo photo--wide"><img src="../assets/img/prototype_open.webp" alt="The open prototype: a curved white housing holding a green circuit board with an ESP32-S3 module, a coin cell and a USB-C port" width="1600" height="1167" loading="lazy"><figcaption>The working prototype, opened up.</figcaption></figure>
+        <figure class="photo"><img src="../assets/img/paper_worn.webp" alt="The earhook clipped to a Meta Quest headset strap, resting behind a wearer's ear with its arm over the ear" width="800" height="940" loading="lazy"><figcaption>Clipped to a headset strap.</figcaption></figure>
+      </div>
+
+      <div class="body grid">
+        <h3 class="span-3">The problem</h3>
+        <div class="span-7 start-5 txt">
+          <p>Cybersickness keeps a lot of people out of VR. It comes from a conflict between what the eyes see and what the inner ear feels. Most fixes change the picture, by narrowing the field of view or blurring motion, and that costs presence.</p>
+          <p>I wanted a fix that leaves the picture alone and that people would actually wear. I ran customer research throughout development, and treated comfort and setup as requirements on the same level as effectiveness.</p>
+        </div>
+
+        <h3 class="span-3">Design decisions</h3>
+        <dl class="span-7 start-5 decisions">
+          <div><dt>Nothing extra to strap on</dt><dd>Bone-conduction devices usually need a headband and per-user fitting. My clip mounts on the headset itself, angled about 45° so the headset's weight presses the transducer onto the mastoid.</dd></div>
+          <div><dt>One size, barely there</dt><dd>A flexible TPU hook rests over the ear and fits different ears. The whole assembly weighs 44 g, under 10% of a typical headset.</dd></div>
+          <div><dt>Works with what people already play</dt><dd>A Python host app reads head motion through OpenVR, so it runs next to any SteamVR app without changing it.</dd></div>
+          <div><dt>Timed to physiology</dt><dd>The otolith organs sense changes in acceleration. The device fires a brief 500 Hz burst just after each peak of linear jerk, where visual-vestibular conflict is strongest.</dd></div>
+        </dl>
+
+        <h3 class="span-3">How the timing works</h3>
+        <figure class="span-8 start-5 chart" aria-labelledby="chart-cap">
+          <svg viewBox="0 0 640 300" role="img" aria-label="Chart: head acceleration over time, the magnitude of jerk below it, and vibration bursts firing just after each jerk peak">
+            <text x="40" y="20" class="ax">head acceleration</text>
+            <path class="c-acc" d="M40.0 79.9 L41.5 79.9 L42.9 79.9 L44.4 79.9 L45.8 79.9 L47.3 79.9 L48.7 79.9 L50.2 79.9 L51.6 79.9 L53.1 79.9 L54.5 79.9 L56.0 79.9 L57.4 79.9 L58.9 79.9 L60.4 79.8 L61.8 79.8 L63.3 79.8 L64.7 79.8 L66.2 79.8 L67.6 79.8 L69.1 79.7 L70.5 79.7 L72.0 79.7 L73.4 79.7 L74.9 79.6 L76.3 79.6 L77.8 79.6 L79.2 79.5 L80.7 79.5 L82.2 79.5 L83.6 79.4 L85.1 79.4 L86.5 79.3 L88.0 79.2 L89.4 79.2 L90.9 79.1 L92.3 79.0 L93.8 79.0 L95.2 78.9 L96.7 78.8 L98.1 78.7 L99.6 78.5 L101.1 78.4 L102.5 78.3 L104.0 78.1 L105.4 78.0 L106.9 77.8 L108.3 77.6 L109.8 77.4 L111.2 77.2 L112.7 77.0 L114.1 76.7 L115.6 76.4 L117.0 76.1 L118.5 75.8 L119.9 75.5 L121.4 75.1 L122.9 74.7 L124.3 74.2 L125.8 73.8 L127.2 73.3 L128.7 72.7 L130.1 72.1 L131.6 71.5 L133.0 70.8 L134.5 70.1 L135.9 69.4 L137.4 68.5 L138.8 67.7 L140.3 66.8 L141.8 65.8 L143.2 64.8 L144.7 63.7 L146.1 62.5 L147.6 61.3 L149.0 60.0 L150.5 58.7 L151.9 57.3 L153.4 55.9 L154.8 54.5 L156.3 52.9 L157.7 51.4 L159.2 49.8 L160.7 48.2 L162.1 46.6 L163.6 45.0 L165.0 43.4 L166.5 41.9 L167.9 40.3 L169.4 38.8 L170.8 37.4 L172.3 36.1 L173.7 34.9 L175.2 33.8 L176.6 32.8 L178.1 31.9 L179.5 31.2 L181.0 30.6 L182.5 30.3 L183.9 30.0 L185.4 30.0 L186.8 30.1 L188.3 30.4 L189.7 30.9 L191.2 31.5 L192.6 32.3 L194.1 33.3 L195.5 34.3 L197.0 35.5 L198.4 36.8 L199.9 38.1 L201.4 39.6 L202.8 41.1 L204.3 42.6 L205.7 44.2 L207.2 45.8 L208.6 47.4 L210.1 49.0 L211.5 50.6 L213.0 52.2 L214.4 53.7 L215.9 55.2 L217.3 56.7 L218.8 58.1 L220.3 59.4 L221.7 60.7 L223.2 61.9 L224.6 63.1 L226.1 64.3 L227.5 65.3 L229.0 66.3 L230.4 67.3 L231.9 68.2 L233.3 69.0 L234.8 69.8 L236.2 70.5 L237.7 71.2 L239.1 71.9 L240.6 72.5 L242.1 73.1 L243.5 73.6 L245.0 74.1 L246.4 74.6 L247.9 75.0 L249.3 75.4 L250.8 75.7 L252.2 76.1 L253.7 76.4 L255.1 76.7 L256.6 77.0 L258.0 77.2 L259.5 77.5 L261.0 77.7 L262.4 77.9 L263.9 78.1 L265.3 78.3 L266.8 78.4 L268.2 78.6 L269.7 78.7 L271.1 78.9 L272.6 79.0 L274.0 79.1 L275.5 79.2 L276.9 79.4 L278.4 79.5 L279.8 79.6 L281.3 79.6 L282.8 79.7 L284.2 79.8 L285.7 79.9 L287.1 80.0 L288.6 80.1 L290.0 80.1 L291.5 80.2 L292.9 80.3 L294.4 80.4 L295.8 80.5 L297.3 80.5 L298.7 80.6 L300.2 80.7 L301.7 80.8 L303.1 80.9 L304.6 81.0 L306.0 81.0 L307.5 81.1 L308.9 81.2 L310.4 81.3 L311.8 81.4 L313.3 81.6 L314.7 81.7 L316.2 81.8 L317.6 81.9 L319.1 82.1 L320.6 82.2 L322.0 82.3 L323.5 82.5 L324.9 82.7 L326.4 82.8 L327.8 83.0 L329.3 83.2 L330.7 83.4 L332.2 83.6 L333.6 83.9 L335.1 84.1 L336.5 84.4 L338.0 84.6 L339.4 84.9 L340.9 85.2 L342.4 85.5 L343.8 85.9 L345.3 86.2 L346.7 86.6 L348.2 87.0 L349.6 87.4 L351.1 87.8 L352.5 88.3 L354.0 88.7 L355.4 89.2 L356.9 89.7 L358.3 90.3 L359.8 90.8 L361.3 91.4 L362.7 92.0 L364.2 92.7 L365.6 93.3 L367.1 94.0 L368.5 94.7 L370.0 95.4 L371.4 96.2 L372.9 97.0 L374.3 97.8 L375.8 98.6 L377.2 99.4 L378.7 100.3 L380.2 101.1 L381.6 102.0 L383.1 102.9 L384.5 103.8 L386.0 104.7 L387.4 105.6 L388.9 106.5 L390.3 107.4 L391.8 108.3 L393.2 109.2 L394.7 110.0 L396.1 110.9 L397.6 111.7 L399.0 112.4 L400.5 113.2 L402.0 113.8 L403.4 114.5 L404.9 115.1 L406.3 115.6 L407.8 116.1 L409.2 116.5 L410.7 116.8 L412.1 117.1 L413.6 117.3 L415.0 117.5 L416.5 117.5 L417.9 117.5 L419.4 117.4 L420.9 117.3 L422.3 117.0 L423.8 116.7 L425.2 116.4 L426.7 115.9 L428.1 115.4 L429.6 114.9 L431.0 114.3 L432.5 113.6 L433.9 112.9 L435.4 112.2 L436.8 111.4 L438.3 110.6 L439.7 109.8 L441.2 108.9 L442.7 108.0 L444.1 107.2 L445.6 106.3 L447.0 105.4 L448.5 104.4 L449.9 103.5 L451.4 102.7 L452.8 101.8 L454.3 100.9 L455.7 100.0 L457.2 99.2 L458.6 98.3 L460.1 97.5 L461.6 96.7 L463.0 96.0 L464.5 95.2 L465.9 94.5 L467.4 93.8 L468.8 93.1 L470.3 92.5 L471.7 91.8 L473.2 91.2 L474.6 90.7 L476.1 90.1 L477.5 89.6 L479.0 89.1 L480.5 88.6 L481.9 88.1 L483.4 87.7 L484.8 87.3 L486.3 86.9 L487.7 86.5 L489.2 86.1 L490.6 85.8 L492.1 85.5 L493.5 85.2 L495.0 84.9 L496.4 84.6 L497.9 84.3 L499.3 84.1 L500.8 83.8 L502.3 83.6 L503.7 83.4 L505.2 83.2 L506.6 83.0 L508.1 82.9 L509.5 82.7 L511.0 82.5 L512.4 82.4 L513.9 82.2 L515.3 82.1 L516.8 82.0 L518.2 81.9 L519.7 81.8 L521.2 81.6 L522.6 81.6 L524.1 81.5 L525.5 81.4 L527.0 81.3 L528.4 81.2 L529.9 81.1 L531.3 81.1 L532.8 81.0 L534.2 80.9 L535.7 80.9 L537.1 80.8 L538.6 80.8 L540.1 80.7 L541.5 80.7 L543.0 80.7 L544.4 80.6 L545.9 80.6 L547.3 80.5 L548.8 80.5 L550.2 80.5 L551.7 80.4 L553.1 80.4 L554.6 80.4 L556.0 80.4 L557.5 80.4 L558.9 80.3 L560.4 80.3 L561.9 80.3 L563.3 80.3 L564.8 80.3 L566.2 80.2 L567.7 80.2 L569.1 80.2 L570.6 80.2 L572.0 80.2 L573.5 80.2 L574.9 80.2 L576.4 80.2 L577.8 80.1 L579.3 80.1 L580.8 80.1 L582.2 80.1 L583.7 80.1 L585.1 80.1 L586.6 80.1 L588.0 80.1 L589.5 80.1 L590.9 80.1 L592.4 80.1 L593.8 80.1 L595.3 80.1 L596.7 80.1 L598.2 80.1 L599.6 80.1 L601.1 80.1 L602.6 80.1 L604.0 80.0 L605.5 80.0 L606.9 80.0 L608.4 80.0 L609.8 80.0 L611.3 80.0 L612.7 80.0 L614.2 80.0 L615.6 80.0 L617.1 80.0 L618.5 80.0 L620.0 80.0"/>
+            <text x="40" y="160" class="ax">size of jerk</text>
+            <line x1="40" y1="270" x2="620" y2="270" class="base"/>
+            <path class="c-jerk" d="M40.0 269.9 L41.5 269.8 L42.9 269.7 L44.4 269.7 L45.8 269.7 L47.3 269.6 L48.7 269.6 L50.2 269.6 L51.6 269.5 L53.1 269.5 L54.5 269.4 L56.0 269.4 L57.4 269.3 L58.9 269.3 L60.4 269.2 L61.8 269.1 L63.3 269.0 L64.7 269.0 L66.2 268.9 L67.6 268.8 L69.1 268.7 L70.5 268.6 L72.0 268.4 L73.4 268.3 L74.9 268.1 L76.3 268.0 L77.8 267.8 L79.2 267.6 L80.7 267.4 L82.2 267.2 L83.6 267.0 L85.1 266.7 L86.5 266.4 L88.0 266.1 L89.4 265.8 L90.9 265.4 L92.3 265.0 L93.8 264.6 L95.2 264.1 L96.7 263.6 L98.1 263.1 L99.6 262.5 L101.1 261.9 L102.5 261.2 L104.0 260.5 L105.4 259.7 L106.9 258.8 L108.3 257.9 L109.8 256.9 L111.2 255.8 L112.7 254.6 L114.1 253.4 L115.6 252.1 L117.0 250.6 L118.5 249.1 L119.9 247.4 L121.4 245.7 L122.9 243.8 L124.3 241.8 L125.8 239.6 L127.2 237.4 L128.7 234.9 L130.1 232.4 L131.6 229.7 L133.0 226.9 L134.5 224.0 L135.9 220.9 L137.4 217.7 L138.8 214.3 L140.3 210.9 L141.8 207.4 L143.2 203.9 L144.7 200.3 L146.1 196.6 L147.6 193.1 L149.0 189.5 L150.5 186.1 L151.9 182.9 L153.4 179.9 L154.8 177.1 L156.3 174.7 L157.7 172.7 L159.2 171.3 L160.7 170.3 L162.1 170.0 L163.6 170.4 L165.0 171.6 L166.5 173.5 L167.9 176.4 L169.4 180.1 L170.8 184.8 L172.3 190.3 L173.7 196.8 L175.2 204.2 L176.6 212.3 L178.1 221.2 L179.5 230.7 L181.0 240.8 L182.5 251.2 L183.9 261.9 L185.4 267.3 L186.8 256.5 L188.3 245.9 L189.7 235.6 L191.2 225.8 L192.6 216.6 L194.1 208.1 L195.5 200.3 L197.0 193.4 L198.4 187.4 L199.9 182.3 L201.4 178.1 L202.8 174.8 L204.3 172.4 L205.7 170.8 L207.2 170.0 L208.6 170.0 L210.1 170.6 L211.5 171.8 L213.0 173.6 L214.4 175.8 L215.9 178.3 L217.3 181.2 L218.8 184.4 L220.3 187.7 L221.7 191.1 L223.2 194.7 L224.6 198.3 L226.1 201.9 L227.5 205.5 L229.0 209.0 L230.4 212.5 L231.9 215.8 L233.3 219.1 L234.8 222.2 L236.2 225.2 L237.7 228.1 L239.1 230.8 L240.6 233.4 L242.1 235.9 L243.5 238.2 L245.0 240.4 L246.4 242.4 L247.9 244.3 L249.3 246.1 L250.8 247.8 L252.2 249.4 L253.7 250.8 L255.1 252.2 L256.6 253.4 L258.0 254.6 L259.5 255.7 L261.0 256.7 L262.4 257.6 L263.9 258.5 L265.3 259.2 L266.8 259.9 L268.2 260.6 L269.7 261.2 L271.1 261.7 L272.6 262.2 L274.0 262.7 L275.5 263.1 L276.9 263.4 L278.4 263.7 L279.8 264.0 L281.3 264.3 L282.8 264.5 L284.2 264.7 L285.7 264.8 L287.1 264.9 L288.6 265.0 L290.0 265.1 L291.5 265.1 L292.9 265.2 L294.4 265.2 L295.8 265.1 L297.3 265.1 L298.7 265.0 L300.2 264.9 L301.7 264.8 L303.1 264.6 L304.6 264.5 L306.0 264.3 L307.5 264.0 L308.9 263.8 L310.4 263.5 L311.8 263.2 L313.3 262.9 L314.7 262.6 L316.2 262.2 L317.6 261.8 L319.1 261.4 L320.6 260.9 L322.0 260.5 L323.5 259.9 L324.9 259.4 L326.4 258.8 L327.8 258.2 L329.3 257.5 L330.7 256.8 L332.2 256.1 L333.6 255.3 L335.1 254.5 L336.5 253.7 L338.0 252.8 L339.4 251.8 L340.9 250.9 L342.4 249.8 L343.8 248.8 L345.3 247.7 L346.7 246.5 L348.2 245.3 L349.6 244.0 L351.1 242.8 L352.5 241.4 L354.0 240.1 L355.4 238.7 L356.9 237.2 L358.3 235.8 L359.8 234.3 L361.3 232.8 L362.7 231.3 L364.2 229.7 L365.6 228.2 L367.1 226.7 L368.5 225.2 L370.0 223.8 L371.4 222.3 L372.9 221.0 L374.3 219.7 L375.8 218.5 L377.2 217.4 L378.7 216.4 L380.2 215.5 L381.6 214.8 L383.1 214.2 L384.5 213.9 L386.0 213.7 L387.4 213.7 L388.9 214.0 L390.3 214.5 L391.8 215.3 L393.2 216.4 L394.7 217.7 L396.1 219.3 L397.6 221.2 L399.0 223.4 L400.5 225.9 L402.0 228.7 L403.4 231.7 L404.9 235.1 L406.3 238.6 L407.8 242.4 L409.2 246.4 L410.7 250.6 L412.1 254.9 L413.6 259.3 L415.0 263.8 L416.5 268.4 L417.9 267.0 L419.4 262.5 L420.9 258.0 L422.3 253.6 L423.8 249.3 L425.2 245.2 L426.7 241.3 L428.1 237.5 L429.6 234.0 L431.0 230.8 L432.5 227.8 L433.9 225.1 L435.4 222.7 L436.8 220.6 L438.3 218.8 L439.7 217.3 L441.2 216.0 L442.7 215.1 L444.1 214.4 L445.6 213.9 L447.0 213.7 L448.5 213.7 L449.9 214.0 L451.4 214.4 L452.8 215.0 L454.3 215.8 L455.7 216.7 L457.2 217.7 L458.6 218.8 L460.1 220.1 L461.6 221.4 L463.0 222.8 L464.5 224.2 L465.9 225.7 L467.4 227.2 L468.8 228.7 L470.3 230.2 L471.7 231.8 L473.2 233.3 L474.6 234.8 L476.1 236.3 L477.5 237.7 L479.0 239.1 L480.5 240.5 L481.9 241.9 L483.4 243.2 L484.8 244.5 L486.3 245.7 L487.7 246.9 L489.2 248.1 L490.6 249.2 L492.1 250.3 L493.5 251.3 L495.0 252.3 L496.4 253.2 L497.9 254.1 L499.3 255.0 L500.8 255.8 L502.3 256.6 L503.7 257.3 L505.2 258.0 L506.6 258.7 L508.1 259.3 L509.5 259.9 L511.0 260.5 L512.4 261.0 L513.9 261.5 L515.3 262.0 L516.8 262.5 L518.2 262.9 L519.7 263.3 L521.2 263.7 L522.6 264.1 L524.1 264.4 L525.5 264.7 L527.0 265.0 L528.4 265.3 L529.9 265.6 L531.3 265.9 L532.8 266.1 L534.2 266.3 L535.7 266.6 L537.1 266.8 L538.6 267.0 L540.1 267.1 L541.5 267.3 L543.0 267.5 L544.4 267.6 L545.9 267.8 L547.3 267.9 L548.8 268.0 L550.2 268.1 L551.7 268.3 L553.1 268.4 L554.6 268.5 L556.0 268.6 L557.5 268.6 L558.9 268.7 L560.4 268.8 L561.9 268.9 L563.3 268.9 L564.8 269.0 L566.2 269.1 L567.7 269.1 L569.1 269.2 L570.6 269.2 L572.0 269.3 L573.5 269.3 L574.9 269.4 L576.4 269.4 L577.8 269.4 L579.3 269.5 L580.8 269.5 L582.2 269.5 L583.7 269.6 L585.1 269.6 L586.6 269.6 L588.0 269.6 L589.5 269.7 L590.9 269.7 L592.4 269.7 L593.8 269.7 L595.3 269.7 L596.7 269.7 L598.2 269.8 L599.6 269.8 L601.1 269.8 L602.6 269.8 L604.0 269.8 L605.5 269.8 L606.9 269.8 L608.4 269.8 L609.8 269.9 L611.3 269.9 L612.7 269.9 L614.2 269.9 L615.6 269.9 L617.1 269.9 L618.5 269.9 L620.0 270.0"/>
+            <g class="burst" data-x="170"><rect x="170" y="276" width="10" height="10"/><text x="168" y="298">burst</text></g><g class="burst" data-x="217"><rect x="217" y="276" width="10" height="10"/></g><g class="burst" data-x="394"><rect x="394" y="276" width="10" height="10"/></g><g class="burst" data-x="455"><rect x="455" y="276" width="10" height="10"/></g>
+            <line class="playhead" x1="40" y1="24" x2="40" y2="285"/>
+          </svg>
+          <figcaption id="chart-cap"><span>Schematic. Top: head acceleration. Bottom: the size of jerk. Squares: bursts, just after each jerk peak.</span><button class="btn btn--small" type="button" data-replay>Replay</button></figcaption>
+        </figure>
+      </div>
+    </div>
+  </article>
+
+  <!-- 01, built and measured: the navy band -->
+  <section class="section band" aria-labelledby="built-h">
+    <div class="wrap grid">
+      <div class="span-5 stack">
+        <span class="t-label">Built and measured</span>
+        <h2 id="built-h">From sketch to a 10-unit manufactured run.</h2>
+        <p>A custom PCB (EasyEDA, JLCPCB), ESP32-S3 firmware in C++ with PlatformIO, a Bluetooth Low Energy link to the host app, and a Swift iOS app I wrote just to measure latency.</p>
+      </div>
+      <dl class="span-6 start-7 stats">
+        <div><dt>Cost per unit, 10-unit run</dt><dd>$49.06</dd></div>
+        <div><dt>Packet loss over 1,000 BLE packets</dt><dd>0%</dd></div>
+        <div><dt>Motion to vibration onset</dt><dd>158.8 ms</dd></div>
+        <div><dt>Full assembly</dt><dd>44 g</dd></div>
+      </dl>
+      <div class="span-12 shots">
+        <figure><img src="../assets/img/paper_open-pcb.webp" alt="Earlier prototype with its custom PCB exposed inside the 3D-printed housing" width="1200" height="909" loading="lazy"><figcaption>Custom PCB, first build.</figcaption></figure>
+        <figure><img src="../assets/img/app_host.webp" alt="Host app window with BLE status, device picker, volume and threshold sliders, and a live trigger log" width="479" height="577" loading="lazy"><figcaption>Host app: thresholds you tune live.</figcaption></figure>
+        <figure><img src="../assets/img/app_ios.webp" alt="iOS test app showing BLE connection, current sound level, trigger threshold and an event log with timestamps" width="1302" height="1270" loading="lazy"><figcaption>iOS app for the latency test.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01, the study -->
+  <section class="section" aria-labelledby="study-h">
+    <div class="wrap grid">
+      <div class="span-5 stack">
+        <span class="t-label">Next · survey design</span>
+        <h2 id="study-h">The paper proved the engineering. The study will test the effect.</h2>
+        <p>I'm preparing the human-subjects study, with a lab reserved under my research assistant privileges. Each participant fills in the Simulator Sickness Questionnaire (SSQ) before and after every session, so every condition is compared on the same validated scale.</p>
+        <p class="note">No efficacy results yet. The sham condition separates the effect of the timing from the effect of simply feeling a vibration.</p>
+      </div>
+      <ol class="span-6 start-7 strip strip--stack conds" aria-label="Study conditions">
+        <li><span class="strip__n">A</span><b>Control</b><span>VR as usual, device not active</span></li>
+        <li><span class="strip__n">B</span><b>Sham</b><span>Device worn, vibration not timed to motion</span></li>
+        <li><span class="strip__n">C</span><b>Active</b><span>Bursts timed to jerk peaks</span></li>
+      </ol>
+    </div>
+  </section>
+  <nav class="next" aria-label="Next project">
+    <div class="wrap"><a href="arthrex.html"><span class="t-label">Next project · Capstone with Arthrex</span><b>A hand-tracking UI library for surgical VR</b></a></div>
+  </nav>
+</main>
+
+<footer class="foot" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <h2 id="contact-h" class="foot__h">Let's talk.</h2>
+    <a class="foot__mail" href="mailto:dennisrayfilho@gmail.com">dennisrayfilho@gmail.com</a>
+    <div class="foot__row">
+      <p>Fort Myers, Florida · open to relocating</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/dennis-ray-filho-09258727b">LinkedIn</a></li>
+        <li><a href="https://github.com/dennisr7">GitHub</a></li>
+        <li><a href="https://devpost.com/dennisr7">Devpost</a></li>
+        <li><a href="../assets/Dennis_Ray_Filho_Resume.pdf">Résumé (PDF)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="../assets/seq-points.js" defer></script>
+<script src="../assets/site.js" defer></script>
+</body>
+</html>

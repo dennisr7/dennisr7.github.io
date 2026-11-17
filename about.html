@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About · Dennis Ray Filho</title>
+<meta name="description" content="Dennis Ray Filho: UX design and human-computer interaction, research, awards, skills and smaller projects.">
+<meta property="og:title" content="About · Dennis Ray Filho">
+<meta property="og:description" content="Dennis Ray Filho: UX design and human-computer interaction, research, awards, skills and smaller projects.">
+<meta property="og:image" content="https://dennisr7.github.io/assets/img/og.jpg">
+<meta name="theme-color" content="#f7f8f8">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav__bar">
+    <a class="nav__name" href="index.html"><span class="mark" aria-hidden="true">DRF</span><span>Dennis Ray Filho</span></a>
+    <nav aria-label="Main">
+      <ul class="nav__links">
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li class="opt"><a href="assets/Dennis_Ray_Filho_Resume.pdf">Résumé</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--primary nav__cta" href="mailto:dennisrayfilho@gmail.com">Email me</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- about -->
+  <section class="section page-top" id="about" aria-labelledby="about-h">
+    <div class="wrap grid">
+      <div class="span-5 stack">
+        <figure class="about-photo"><img src="assets/img/headshot_portrait.webp" alt="Dennis Ray Filho in a blue blazer and black shirt, against a white geometric wall" width="960" height="1200"></figure>
+        <h1 id="about-h">About me</h1>
+        <p class="lead">I specialize in UX design and human-computer interaction. I study computer science with a data science concentration at Florida Gulf Coast University (graduating May 2027) and work there as a research assistant to HCI researcher Dr. Md Baharul Islam.</p>
+        <p>I grew up speaking Portuguese and English and work in Spanish. I'm Treasurer of the IEEE FGCU Student Branch, which sponsored TechX Florida 2026 and paid for student transportation, and I hold an amateur radio license, KQ4TAL. I'm looking for UX engineering, product and research roles, and I'm open to relocating.</p>
+      </div>
+      <ul class="span-6 start-7 rows rows--long" aria-label="Skills">
+        <li><span>Design and research</span><span>User interviews, human-subjects study design, NASA TLX, SSQ, usability testing, accessibility, rapid prototyping</span></li>
+        <li><span>Hardware</span><span>ESP32-S3, PlatformIO, BLE, I2C, SPI, JTAG, PCB design (EasyEDA, JLCPCB), 3D printing (Tinkercad, Inkscape)</span></li>
+        <li><span>XR and 3D</span><span>Unreal Engine, Unity, SteamVR and OpenVR, Three.js, React Three Fiber</span></li>
+        <li><span>Code</span><span>Python, TypeScript, React, Swift, C and C++, Dart and Flutter, MediaPipe, OpenCV</span></li>
+        <li><span>AI and data</span><span>Agentic AI workflows, RAG, LLM structured outputs, Databricks, scikit-learn, XGBoost, OR-Tools</span></li>
+        <li><span>Certifications</span><span>CompTIA CSIS, Security+, Network+, A+ · Six Sigma Yellow Belt · FCC amateur radio, Technician</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- research and recognition -->
+  <section class="section band" id="research" aria-labelledby="research-h">
+    <div class="wrap grid">
+      <div class="span-4 stack">
+        <h2 id="research-h">Research and recognition</h2>
+        <p>Five hackathon challenge wins, one paper, one patent filing.</p>
+      </div>
+      <ul class="span-7 start-6 pubs">
+        <li><span class="t-label">Paper · first author</span><a href="https://doi.org/10.1109/ICIICE69672.2026.11565340">Jerk-Triggered Bone-Conducted Vibration for VR Cybersickness Mitigation</a><span>D. Ray Filho, M. B. Islam · IEEE ICIICE 2026</span></li>
+        <li><span class="t-label">Patent</span><b>VR cybersickness wearable</b><span>Provisional patent filed by FGCU, co-inventor. FGCU has committed full funding toward a utility patent.</span></li>
+        <li><span class="t-label">Talk</span><b>FGCU AI Day</b><span>Presented the cybersickness wearable</span></li>
+        <li><span class="t-label">Awards</span><b>1st Overall and Arthrex Challenge, EagleHacks 2026</b><span>1st, NextEra Drone Challenge, KnightHacks 2025 · 3rd, EagleHacks 2025 · 3rd, NextEra "Win the Summer With AI" 2026</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- more work: a table, because these are facts to scan -->
+  <section class="section" id="more" aria-labelledby="more-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="more-h">More projects</h2></div>
+      <div class="table-wrap">
+        <table class="projects">
+          <thead><tr><th scope="col">Project</th><th scope="col">Result</th><th scope="col">What I built</th><th scope="col">Stack</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">GridWatch<small>KnightHacks, Oct. 2025</small></th><td>1st Place, NextEra Drone Optimization Challenge</td><td>An OR-Tools routing solver that fits pole waypoints into the fewest drone missions under a 37,725 ft battery cap, with Dijkstra path expansion</td><td>Python, OR-Tools, NumPy</td></tr>
+            <tr><th scope="row">Sleep apnea from ECG<small>Apr. 2026</small></th><td>0.70 AUC-ROC</td><td>A leakage-free XGBoost pipeline on 70 PhysioNet ECG recordings, with heart-rate-variability features and grouped cross-validation</td><td>Python, XGBoost, scikit-learn</td></tr>
+            <tr><th scope="row">Handwritio<small>EagleHacks, Feb. 2025</small></th><td>3rd Place</td><td>The Flutter front end that shows Azure OCR results of handwriting from a Flask back end</td><td>Flutter, Dart, Azure OCR</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <h2 id="contact-h" class="foot__h">Let's talk.</h2>
+    <a class="foot__mail" href="mailto:dennisrayfilho@gmail.com">dennisrayfilho@gmail.com</a>
+    <div class="foot__row">
+      <p>Fort Myers, Florida · open to relocating</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/dennis-ray-filho-09258727b">LinkedIn</a></li>
+        <li><a href="https://github.com/dennisr7">GitHub</a></li>
+        <li><a href="https://devpost.com/dennisr7">Devpost</a></li>
+        <li><a href="assets/Dennis_Ray_Filho_Resume.pdf">Résumé (PDF)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

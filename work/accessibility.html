@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Accessibility projects · Dennis Ray Filho</title>
+<meta name="description" content="Pawthfinder, a robot guide-dog simulation on real street layouts, and sign-language AR research at FGCU.">
+<meta property="og:title" content="Accessibility projects · Dennis Ray Filho">
+<meta property="og:description" content="Pawthfinder, a robot guide-dog simulation on real street layouts, and sign-language AR research at FGCU.">
+<meta property="og:image" content="https://dennisr7.github.io/assets/img/og.jpg">
+<meta name="theme-color" content="#f7f8f8">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav__bar">
+    <a class="nav__name" href="../index.html"><span class="mark" aria-hidden="true">DRF</span><span>Dennis Ray Filho</span></a>
+    <nav aria-label="Main">
+      <ul class="nav__links">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li class="opt"><a href="../assets/Dennis_Ray_Filho_Resume.pdf">Résumé</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--primary nav__cta" href="mailto:dennisrayfilho@gmail.com">Email me</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- 04 -->
+  <article class="case page-top" id="access" aria-labelledby="c4-h">
+    <div class="wrap">
+      <header class="case__head grid">
+        <div class="span-6">
+          <span class="t-label">Accessibility</span>
+          <h1 id="c4-h">Getting around when the street isn't built for you.</h1>
+        </div>
+      </header>
+      <figure class="hero-fig">
+        <img src="../assets/img/robot_guide_dog.webp" alt="A grey four-legged robot dog standing on brick paving beside a curb" width="1280" height="591">
+        <figcaption>A robot guide-dog prototype, not ours: Pawthfinder's guide dog runs in simulation. Photo: <a href="https://commons.wikimedia.org/wiki/File:Robotic_Guide_Dog_prototype.jpg">DGtal</a>, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</figcaption>
+      </figure>
+      <div class="pair">
+        <div class="stack">
+          <h3>Pawthfinder</h3>
+          <p class="meta">Python, PyBullet, OpenStreetMap, A* · September 2026</p>
+          <p>Talking crosswalks and curb ramps cost thousands of dollars each, so most streets don't have them. Our team's idea was to make the safety check travel with the person: plan a robotaxi ride and the walk to it as one trip, door to seat, with a robot guide dog for the walk.</p>
+          <p>I built the PyBullet simulation the guide dog runs in. The worlds are generated from OpenStreetMap data with flood and hazard layers, the robot reads the ground through depth-camera height maps, and it replans with A* every step. The team could watch it guide on real Miami street layouts within a weekend.</p>
+        </div>
+        <div class="stack">
+          <h3>Sign-language avatar</h3>
+          <p class="meta">FGCU HCI research · in progress</p>
+          <p>As a research assistant, I'm part of ongoing work using AR glasses to drive an avatar that can communicate in and interpret sign language.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+  <nav class="next" aria-label="Next project">
+    <div class="wrap"><a href="cybersickness.html"><span class="t-label">Next project · Invention</span><b>A VR motion-sickness wearable that clips to the headset</b></a></div>
+  </nav>
+</main>
+
+<footer class="foot" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <h2 id="contact-h" class="foot__h">Let's talk.</h2>
+    <a class="foot__mail" href="mailto:dennisrayfilho@gmail.com">dennisrayfilho@gmail.com</a>
+    <div class="foot__row">
+      <p>Fort Myers, Florida · open to relocating</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/dennis-ray-filho-09258727b">LinkedIn</a></li>
+        <li><a href="https://github.com/dennisr7">GitHub</a></li>
+        <li><a href="https://devpost.com/dennisr7">Devpost</a></li>
+        <li><a href="../assets/Dennis_Ray_Filho_Resume.pdf">Résumé (PDF)</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
