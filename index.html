@@ -33,7 +33,7 @@ a{color:var(--accent)}
 <main>
 <header>
 <h1>Dennis Ray Filho</h1>
-<p class="lede">I design and build interfaces for people in hard situations: surgeons who can't touch a screen, VR users getting motion sick, drivers waiting on a charger. Computer Science (Data Science) at Florida Gulf Coast University, graduating May 2027. HCI Research Assistant.</p>
+<p class="lede">I'm a Computer Science student (Data Science concentration) at Florida Gulf Coast University, graduating in May 2027, and a Research Assistant in human-computer interaction. Most of my work starts with people who can't use an interface the normal way, like a surgeon who can't touch a screen or a VR user who starts feeling sick, and I iterate from there.</p>
 <div class="links">
 <a href="https://www.linkedin.com/in/dennis-ray-filho-09258727b">LinkedIn</a>
 <a href="https://devpost.com/dennisr7">Devpost</a>
@@ -42,10 +42,10 @@ a{color:var(--accent)}
 </header>
 
 <nav class="toc">
-<a href="#ev">01 · EV charging reservations <span>— NextEra Energy internship</span></a>
-<a href="#ortho">02 · OrthoVision: touch-free surgical anatomy <span>— 1st Overall, EagleHacks 2026</span></a>
-<a href="#bcv">03 · A VR cybersickness invention <span>— FGCU HCI research</span></a>
-<a href="#paw">04 · Pawthfinder: door-to-seat navigation <span>— ShellHacks 2026</span></a>
+<a href="#ev">01 · EV charging reservations <span>(NextEra Energy internship)</span></a>
+<a href="#ortho">02 · OrthoVision, touch-free surgical anatomy <span>(1st Overall, EagleHacks 2026)</span></a>
+<a href="#bcv">03 · A VR cybersickness invention <span>(FGCU HCI research)</span></a>
+<a href="#paw">04 · Pawthfinder, door-to-seat navigation <span>(ShellHacks 2026)</span></a>
 </nav>
 
 <section class="case" id="ev">
@@ -53,31 +53,31 @@ a{color:var(--accent)}
 <div class="meta">NextEra Energy · College Intern, IT · Summer 2026</div>
 <span class="tag">User interviews</span><span class="tag">Usage data</span><span class="tag">Root-cause analysis</span><span class="tag">Smartcar API</span>
 <h3>The problem</h3>
-<p>The ask was an EV charging reservation system. The complaint behind it was idle time: cars sitting on chargers long after they'd finished, blocking the next driver.</p>
+<p>I designed an EV charging reservation system at NextEra. The complaint behind it was idle time, where cars stayed plugged into chargers long after they finished, and the next driver had to wait.</p>
 <h3>Research</h3>
-<p>I interviewed EV drivers and product designers and looked at charger-usage data. The pattern was simple: people weren't hogging chargers on purpose. They didn't know their car was done.</p>
+<p>I interviewed EV drivers and product designers, and went through charger-usage data. What I found was that drivers weren't staying on chargers on purpose; they just didn't know their car had finished charging.</p>
 <h3>Decision</h3>
-<p>Reservations alone wouldn't fix that, because a driver who doesn't know they're finished still overstays their slot. So the design brought live charge status to the driver, pulling it straight from the car through the Smartcar API.</p>
+<p>A reservation system by itself wouldn't fix that, since a driver who doesn't know they're done will still overstay their slot. So I designed the feature to show drivers their live charge status, pulled directly from the car through the Smartcar API.</p>
 <h3>Outcome</h3>
-<p>I shipped the Smartcar integration that surfaces charge status as part of the reservation feature.</p>
+<p>I shipped the Smartcar integration that brings charge status into the reservation feature.</p>
 </section>
 
 <section class="case" id="ortho">
-<h2>OrthoVision: touch-free surgical anatomy</h2>
+<h2>OrthoVision, touch-free surgical anatomy</h2>
 <div class="meta">EagleHacks 2026 · 3-person team · 1st Place Overall + 1st Place Arthrex Challenge · <a href="https://orthovision-seven.vercel.app">Live demo</a></div>
 <span class="tag">Gesture interaction</span><span class="tag">Voice</span><span class="tag">3D</span><span class="tag">MediaPipe</span><span class="tag">React Three Fiber</span>
 <h3>The problem</h3>
-<p>Arthrex's challenge was to help surgeons treat patients better. A surgeon in a sterile field can't grab a mouse, so a 3D anatomy tool has to work without touch.</p>
+<p>Arthrex's challenge asked us to help surgeons treat their patients better. A surgeon working in a sterile field can't reach for a mouse, so we wanted a 3D anatomy tool that works without touching anything.</p>
 <h3>My role</h3>
-<p>I built the real-time hand tracking, the anatomical scene controls, and the speech-to-text assistant interface.</p>
+<p>I developed the real-time hand tracking, the anatomical scene controls, and the speech-to-text assistant interface.</p>
 <h3>Design decisions</h3>
 <ul>
-<li><strong>Gestures that don't misfire.</strong> Hand tracking is noisy. I added hysteresis, dead zones and smoothing so a resting hand doesn't spin the model, streaming gestures at 30 FPS from a Python sidecar.</li>
-<li><strong>Voice for selection, hands for navigation.</strong> Saying a structure's name selects it, shows it and flies the camera to it. Gestures handle orbit and zoom.</li>
-<li><strong>Feedback you can see.</strong> Selected structures glow with an animated highlight, color-coded by tissue type, across a 452-mesh knee model.</li>
+<li>Hand tracking is noisy, and a resting hand shouldn't spin the model. I added hysteresis, dead zones and smoothing to the Python sidecar, which streams gestures at 30 FPS.</li>
+<li>Voice handles selection and hands handle navigation. Saying a structure's name selects it, shows it and flies the camera to it, while gestures orbit and zoom.</li>
+<li>Selected structures glow with an animated highlight across a 452-mesh knee model, so it's always clear what the system picked up.</li>
 </ul>
 <h3>What happened next</h3>
-<p>The win became a capstone partnership with Arthrex. We're now designing a hand-tracking library in Unreal Engine to assist surgical interactions, and planning NASA TLX user studies to measure task load and iterate. I've reserved a lab for those studies. No results yet.</p>
+<p>The win turned into a capstone partnership with Arthrex. We're now designing a hand-tracking library in Unreal Engine to assist surgical interactions, and we're planning user studies with the NASA TLX to measure task performance and keep improving it. I've reserved a lab for those studies under my Research Assistant privileges. There are no results yet.</p>
 </section>
 
 <section class="case" id="bcv">
@@ -85,22 +85,22 @@ a{color:var(--accent)}
 <div class="meta">FGCU HCI research with Dr. Md Baharul Islam · IEEE ICIICE 2026 · <a href="https://doi.org/10.1109/ICIICE69672.2026.11565340">Paper</a></div>
 <span class="tag">Hardware + software</span><span class="tag">Human factors</span><span class="tag">Provisional patent</span>
 <h3>The problem</h3>
-<p>Many people get motion sick in VR, and a fix is only useful if people will actually wear it.</p>
+<p>Many people get motion sick in VR, and a fix only helps if people will actually wear it.</p>
 <h3>The invention</h3>
 <ul>
-<li><strong>No extra headband.</strong> A clip mounts on the VR headset itself and holds a bone-conduction transducer against the mastoid. No per-user calibration.</li>
-<li><strong>Timed to the body, not the clock.</strong> Vibration fires at peaks of linear jerk, the moments of strongest visual-vestibular conflict, when sickness is most likely.</li>
-<li><strong>Works with what people already play.</strong> The host app runs alongside any SteamVR app, unmodified.</li>
+<li>A clip mounts on the VR headset itself and holds a bone-conduction transducer against the mastoid, so there's no extra headband and no per-user calibration.</li>
+<li>The vibration fires at peaks of linear jerk, which match the moments of strongest visual-vestibular conflict, when cybersickness is most likely.</li>
+<li>The host app runs alongside any SteamVR app without modifying it.</li>
 </ul>
-<p>I'm co-inventor with Dr. Islam on FGCU's provisional patent, and FGCU has committed to funding a utility patent. We are in the process of a full human-subjects study of the device.</p>
+<p>Dr. Islam and I are co-inventors on FGCU's provisional patent, and FGCU has committed full funding toward a utility patent. We are in the process of a full human-subjects study of the device.</p>
 </section>
 
 <section class="case" id="paw">
-<h2>Pawthfinder: door-to-seat navigation</h2>
+<h2>Pawthfinder, door-to-seat navigation</h2>
 <div class="meta">ShellHacks 2026 · team project · accessibility</div>
 <span class="tag">Accessibility</span><span class="tag">Simulation</span><span class="tag">PyBullet</span>
 <h3>The problem</h3>
-<p>Accessible crosswalks and curb ramps are expensive, so most streets lack them. The team's idea: make the safety check travel with the person, planning a robotaxi ride and the walk to it as one trip, with a robot guide dog for the walking part.</p>
+<p>Accessible crosswalks and curb ramps are expensive, so most streets don't have them. Our team's idea was to have the safety check travel with the person, planning a robotaxi ride and the walk to it as one trip, with a robot guide dog for the walking part.</p>
 <h3>My role</h3>
 <p>I built the PyBullet simulation of the guide dog leading a blind pedestrian on real Miami streets, using OpenStreetMap worlds, hazard data and A* replanning.</p>
 </section>
