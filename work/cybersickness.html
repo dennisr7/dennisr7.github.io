@@ -41,7 +41,7 @@
         <div class="scrub__copy">
           <div class="scrub__chap is-on" data-from="0" data-to=".2">
             <h1 id="hero-h">I invented a wearable to reduce motion sickness in&nbsp;VR.</h1>
-            <p>I built it at Florida Gulf Coast University under HCI researcher Dr. Md Baharul Islam. The device turning here is its behind-the-ear form. Scroll and it becomes its drawing.</p>
+            <p>I built it at Florida Gulf Coast University under HCI researcher Dr. Md Baharul Islam, designing a custom PCB, enclosure, and firmware. Scroll for a 3D visualization of the product's design!</p>
             <div class="btn-row"><a class="btn btn--primary" href="#case">Skip to the case study</a></div>
           </div>
           <div class="scrub__chap" data-from=".2" data-to=".4">
@@ -51,18 +51,18 @@
           </div>
           <div class="scrub__chap" data-from=".4" data-to=".58">
             <span class="t-label">fig. 2 · timing</span>
-            <h2>Vibration timed to the inner ear.</h2>
-            <p>A short burst fires just after each peak of linear jerk, the moments when what your eyes see and what your inner ear feels disagree the most.</p>
+            <h2>Bone conduction, rooted in vestibular physiology.</h2>
+            <p>The unit mounts on the back of the ear, on a bone known as the mastoid. The design that I invented ensures a consistent fit on all users. Bone conduction delivered to the mastoid can been shown to reduce VR motion sickness in many UX studies.</p>
           </div>
           <div class="scrub__chap" data-from=".58" data-to=".8" data-co="arm">
             <span class="t-label">fig. 3 · drawn from the CAD</span>
-            <h2>One size, 44 grams.</h2>
-            <p>A flexible TPU arm curves over the ear and fits different ears. The drawing is computed from the same model as the render.</p>
+            <h2>A novel timing mechanism.</h2>
+            <p>I also invented a novel timing mechanism, where the bone conduction transducer delivers short bursts timed to the peak of linear jerk. According to sensory conflict theory, linear jerk is the timeframe where someone is most likely to suffer from VR motion sickness.</p>
           </div>
           <div class="scrub__chap" data-from=".8" data-to="1">
             <span class="t-label">fig. 4 · status</span>
             <h2>Patent pending. The study is next.</h2>
-            <p>I'm co-inventor, with Dr. Md Baharul Islam, on FGCU's provisional patent, and first author of the IEEE ICIICE 2026 paper. The human-subjects study is being prepared now.</p>
+            <p>I am registered as a co-inventor, with Dr. Md Baharul Islam, on FGCU's provisional patent, and first author of the IEEE ICIICE 2026 paper. The human-subjects study is being prepared now.</p>
             <div class="btn-row dup"><a class="btn btn--primary" href="#case">Read the case study</a></div>
           </div>
           <div class="scrub__meter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
@@ -87,10 +87,10 @@
         <div class="span-5 start-8 stack">
           <p class="lead">A wearable that times bone-conducted vibration to the moments VR is most likely to make you sick. I designed and built it end to end: the mount, the circuit board, the firmware, the host software and the test tools.</p>
           <ul class="rows">
-            <li><span>Role</span><span>Co-inventor, first author, sole builder</span></li>
+            <li><span>Role</span><span>Inventor, first author, hardware, software builder</span></li>
             <li><span>With</span><span>Dr. Md Baharul Islam, FGCU</span></li>
             <li><span>Built in</span><span>Python, C++ on ESP32-S3, Swift</span></li>
-            <li><span>Paper</span><span><a href="https://doi.org/10.1109/ICIICE69672.2026.11565340">IEEE ICIICE 2026, doi.org/10.1109/ICIICE69672.2026.11565340</a></span></li>
+            <li><span>Paper</span><span><a href="https://doi.org/10.1109/ICIICE69672.2026.11565340">IEEE ICIICE 2026: doi.org/10.1109/ICIICE69672.2026.11565340</a></span></li>
           </ul>
         </div>
       </header>
@@ -112,7 +112,7 @@
           <div><dt>Nothing extra to strap on</dt><dd>Bone-conduction devices usually need a headband and per-user fitting. My clip mounts on the headset itself, angled about 45° so the headset's weight presses the transducer onto the mastoid.</dd></div>
           <div><dt>One size, barely there</dt><dd>A flexible TPU hook rests over the ear and fits different ears. The whole assembly weighs 44 g, under 10% of a typical headset.</dd></div>
           <div><dt>Works with what people already play</dt><dd>A Python host app reads head motion through OpenVR, so it runs next to any SteamVR app without changing it.</dd></div>
-          <div><dt>Timed to physiology</dt><dd>The otolith organs sense changes in acceleration. The device fires a brief 500 Hz burst just after each peak of linear jerk, where visual-vestibular conflict is strongest.</dd></div>
+          <div><dt>Timed to physiology</dt><dd>The otolith organs sense changes in acceleration. The device fires a brief 500 Hz burst just after each peak of linear jerk, where visual-vestibular conflict (the root of VR motion sickness) is strongest.</dd></div>
         </dl>
 
         <h3 class="span-3">How the timing works</h3>
